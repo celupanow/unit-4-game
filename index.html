@@ -3,13 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- link to css file -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Document</title>
+    <title>'Tis But a Scratch!</title>
 </head>
 <body>
-    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 character" id="kingArthur">
+                <p>King Arthur</p>
+                <img src="assets/images/kingarthur.jpeg">
+                <p id="kingArthurhp"></p>
+            </div>
+            <div class="col-md-3 character" id="killerRabbit">
+                <p>Killer Rabbit</p>
+                <img src="assets/images/killerrabbit.jpg">
+                <p id="killerRabbithp"></p>
+            </div>
+            <div class="col-md-3 character" id="knightsOfNi">
+                <p>The Knights Who Say Ni</p>
+                <img src="assets/images/knightswhosayni.jpg">
+                <p id="knightsOfNihp"></p>
+            </div>
+            <div class="col-md-3 character" id="blackKnight">
+                <p>The Black Knight</p>
+                <img src="assets/images/blackknight.jpg">
+                <p id="blackKnighthp"></p>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-12" id="yourCharacter">
+            <h4>Your Character</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        Enemies Available To Attack
+        <div class="row" id="available">
+            <div class="col-md-3 enemy" id="enemy1"></div>
+            <div class="col-md-3 enemy" id="enemy2"></div>
+            <div class="col-md-3 enemy" id="enemy3"></div>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="fight" class="col-md-12">
+        Fight Section
+        </div>
+        <button class="btn btn-primary" id="btn">Attack!</button>
+    </div>
+    <div class="row">
+        <div id="defender" class="col-md-12">
+        Defender
+        </div>
+    </div>
+    </div>
+
+    <!-- link to jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--link to javascript file -->    
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
