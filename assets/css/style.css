@@ -3,3 +3,12 @@ img {
     height: 200px;
     width: 200px;
 };
+
+.container {
+    background-color: black;
+    font: white;
+};
+
+#kingArthur {
+    background-color: white;
+};
