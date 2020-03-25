@@ -6,6 +6,8 @@
     <!-- link to Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- link to css reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- link to css file -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>'Tis But a Scratch!</title>
@@ -13,6 +15,12 @@
 <body>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Help, Help! I'm Being Repressed!
+            </div>
+        </div>
+    
         <div class="row">
             <div class="col-md-3">
                 <div id="kingArthur">
@@ -44,7 +52,7 @@
             </div>
         </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 yourCharacter">
             <h4>Your Character</h4>
             <p id="yourCharacter"></p>
             <p id="yourCharacterhp"></p>
@@ -52,7 +60,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-        Enemies Available To Attack
+        <p class="title">Enemies Available To Attack</p>
         <div class="row" id="available">
             <div class="col-md-3 enemy" id="enemy1col">
                 <p id="enemy1"></p>
@@ -70,15 +78,16 @@
         </div>
     </div>
     <div class="row">
-        <div id="fight" class="col-md-12">
-        Fight Section
+        <div class="col-md-12">
+        <p class="title">Fight Section</p>
+        <button class="btn btn-light" id="btn">Attack!</button>
         </div>
-        <button class="btn btn-primary" id="btn">Attack!</button>
     </div>
     <div class="row">
-        <div class="col-md-12">
-        <p>Defender</p>
+        <div class="col-md-12 defender">
+        <p class="title">Defender</p>
         <p id="defender"></p>
+        <p id="defenderImage"></p>
         <p id="defenderhp"></p>
         </div>
     </div>

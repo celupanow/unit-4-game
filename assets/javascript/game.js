@@ -20,7 +20,7 @@ kingArthur = {
 
 killerRabbit = {
     name: "Killer Rabbit",
-    image: "assets/images/killerrabbit.jpg",
+    image: "<img src='assets/images/killerrabbit.jpg'>",
     health: 150,
     attack: 20,
     counterattack: 20
@@ -28,7 +28,7 @@ killerRabbit = {
 
 knightsOfNi = {
     name: "The Knights Who Say Ni",
-    image: "assets/images/knightswhosayni.jpg",
+    image: "<img src='assets/images/knightswhosayni.jpg'>",
     health: 100,
     attack: 20,
     counterattack: 10
@@ -36,7 +36,7 @@ knightsOfNi = {
 
 blackKnight = {
     name: "The Black Knight",
-    image: "assets/images/blackknight.jpg",
+    image: "<img src='assets/images/blackknight.jpg'>",
     health: 150,
     attack: 20,
     counterattack: 5
@@ -65,18 +65,66 @@ blackKnight = {
             defenderHealth = kingArthur.health;
             $("#defenderhp").html(defenderHealth);
             defenderCounter = kingArthur.counterattack;
+            $("#defender").html(kingArthur.name);
+            $("#defenderImage").html(kingArthur.image);
+            $("#defenderhp").css("padding", "0px 0px 10px 0px");
+            $("#defender").css("border-style", "solid");
+            $("#defender").css("border-width", "5px 5px 0px 5px");
+            $("#defender").css("border-color", "green");
+            $("#defenderImage").css("border-style", "solid");
+            $("#defenderImage").css("border-width", "0px 5px 0px 5px");
+            $("#defenderImage").css("border-color", "green");
+            $("#defenderhp").css("border-style", "solid");
+            $("#defenderhp").css("border-width", "0px 5px 5px 5px");
+            $("#defenderhp").css("border-color", "green");
         } else if (y === killerRabbit) {
             defenderHealth = killerRabbit.health;
             $("#defenderhp").html(defenderHealth);
             defenderCounter = killerRabbit.counterattack;
+            $("#defender").html(killerRabbit.name);
+            $("#defenderImage").html(killerRabbit.image);
+            $("#defenderhp").css("padding", "0px 0px 10px 0px");
+            $("#defender").css("border-style", "solid");
+            $("#defender").css("border-width", "5px 5px 0px 5px");
+            $("#defender").css("border-color", "green");
+            $("#defenderImage").css("border-style", "solid");
+            $("#defenderImage").css("border-width", "0px 5px 0px 5px");
+            $("#defenderImage").css("border-color", "green");
+            $("#defenderhp").css("border-style", "solid");
+            $("#defenderhp").css("border-width", "0px 5px 5px 5px");
+            $("#defenderhp").css("border-color", "green");
         } else if (y === knightsOfNi) {
             defenderHealth = knightsOfNi.health;
             $("#defenderhp").html(defenderHealth);
             defenderCounter = knightsOfNi.counterattack;
+            $("#defender").html(knightsOfNi.name);
+            $("#defenderImage").html(knightsOfNi.image);
+            $("#defenderhp").css("padding", "0px 0px 10px 0px");
+            $("#defender").css("border-style", "solid");
+            $("#defender").css("border-width", "5px 5px 0px 5px");
+            $("#defender").css("border-color", "green");
+            $("#defenderImage").css("border-style", "solid");
+            $("#defenderImage").css("border-width", "0px 5px 0px 5px");
+            $("#defenderImage").css("border-color", "green");
+            $("#defenderhp").css("border-style", "solid");
+            $("#defenderhp").css("border-width", "0px 5px 5px 5px");
+            $("#defenderhp").css("border-color", "green");
         } else if (y === blackKnight) {
             defenderHealth = blackKnight.health;
             $("#defenderhp").html(defenderHealth);
             defenderCounter = blackKnight.counterattack;
+            $("#defender").html(blackKnight.name);
+            $("#defenderImage").html(blackKnight.image);
+            $("#defenderhp").css("padding", "0px 0px 10px 0px");
+            $("#defender").css("border-style", "solid");
+            $("#defender").css("border-width", "5px 5px 0px 5px");
+            $("#defender").css("border-color", "green");
+            $("#defenderImage").css("border-style", "solid");
+            $("#defenderImage").css("border-width", "0px 5px 0px 5px");
+            $("#defenderImage").css("border-color", "green");
+            $("#defenderhp").css("border-style", "solid");
+            $("#defenderhp").css("border-width", "0px 5px 5px 5px");
+            $("#defenderhp").css("border-color", "green");
         }
     };
     
@@ -90,13 +138,34 @@ blackKnight = {
         chosenAttack = chosenAttack + chosenAttack;
         //display the new health for the chosen character
         $("#yourCharacterhp").html(chosenHealth);
+        $("#yourCharacterhp").css("border-style", "solid");
+        $("#yourCharacterhp").css("border-width", "0px 5px 5px 5px");
+        $("#yourCharacterhp").css("border-color", "green");
+        $("#yourCharacterhp").css("background-color", "white");
+        $("#yourCharacterhp").css("text-align", "center");
+        $("#yourCharacterhp").css("padding", "0px 0px 15px 0px");
         //display the new health for the defender
         $("#defenderhp").html(defenderHealth);
+        
             //if the defender's health is zero or less
             if (defenderHealth <= 0) {
                 //empty the defender divs
                 $("#defender").empty();
                 $("#defenderhp").empty();
+                $("#defenderImage").empty();
+                $("#defender").css("border-style", "");
+                $("#defender").css("border-width", "");
+                $("#defender").css("border-color", "");
+                $("#defender").css("background-color", "");
+                $("#defenderImage").css("border-style", "");
+                $("#defenderImage").css("border-width", "");
+                $("#defenderImage").css("border-color", "");
+                $("#defenderImage").css("background-color", "");
+                $("#defenderhp").css("border-style", "");
+                $("#defenderhp").css("border-width", "");
+                $("#defenderhp").css("border-color", "");
+                $("#defenderhp").css("background-color", "");
+                $("#defenderhp").css("padding", "");
             } 
          
             //if the chosen's health is less than or equal to zero
@@ -104,6 +173,10 @@ blackKnight = {
                 //empty yourCharacter div and alert the loss
                 $("#yourCharacter").empty();
                 $("#yourCharacterhp").empty();
+                $("#yourCharacterhp").css("background-color", "");
+                $("#yourCharacterhp").css("border-style", "");
+                $("#yourCharacterhp").css("border-width", "");
+                $("#yourCharacterhp").css("border-color", "");
                 alert("Bring Out Your Dead! Refresh the page to try again.");
             }
     };
@@ -123,14 +196,26 @@ $("#kingArthur").on("click", function() {
     //append the killerRabbit divs to the enemy1 divs
     $("#killerRabbit").appendTo("#enemy1");
     $("#killerRabbithp").appendTo("#enemy1hp");
+    $("#killerRabbit").css("background-color", "red");
+    $("#killerRabbithp").css("background-color", "red");
+    $("#killerRabbit").css("border-color", "black");
+    $("#killerRabbithp").css("border-color", "black");
     enemy1 = killerRabbit;
     //append the knightsOfNi divs to the enemy2 divs
     $("#knightsOfNi").appendTo("#enemy2");
     $("#knightsOfNihp").appendTo("#enemy2hp");
+    $("#knightsOfNi").css("background-color", "red");
+    $("#knightsOfNihp").css("background-color", "red");
+    $("#knightsOfNi").css("border-color", "black");
+    $("#knightsOfNihp").css("border-color", "black");
     enemy2 = knightsOfNi;
     //append the blackKnight divs to the enemy3 divs
     $("#blackKnight").appendTo("#enemy3");
     $("#blackKnighthp").appendTo("#enemy3hp");
+    $("#blackKnight").css("background-color", "red");
+    $("#blackKnighthp").css("background-color", "red");
+    $("#blackKnight").css("border-color", "black");
+    $("#blackKnighthp").css("border-color", "black");
     enemy3 = blackKnight;
     }
 }); 
@@ -143,20 +228,32 @@ $("#killerRabbit").on("click", function() {
         chosenChara = killerRabbit;
     //append killerRabbit divs to the yourCharacter divs
     $("#killerRabbit").appendTo("#yourCharacter");
-    $("#killerRabbitrhp").appendTo("#yourCharacterhp");
+    $("#killerRabbithp").appendTo("#yourCharacterhp");
     //run the stats function
     stats(chosenChara);
     //append the kingArthur divs to the enemy1 divs
     $("#kingArthur").appendTo("#enemy1");
     $("#kingArthurhp").appendTo("#enemy1hp");
+    $("#kingArthur").css("background-color", "red");
+    $("#kingArthurhp").css("background-color", "red");
+    $("#kingArthur").css("border-color", "black");
+    $("#kingArthurhp").css("border-color", "black");
     enemy1 = kingArthur;
     //append the knightsOfNi divs to the enemy2 divs
     $("#knightsOfNi").appendTo("#enemy2");
     $("#knightsOfNihp").appendTo("#enemy2hp");
+    $("#knightsOfNi").css("background-color", "red");
+    $("#knightsOfNihp").css("background-color", "red");
+    $("#knightsOfNi").css("border-color", "black");
+    $("#knightsOfNihp").css("border-color", "black");
     enemy2 = knightsOfNi;
     //append the blackKnight divs to the enemy3 divs
     $("#blackKnight").appendTo("#enemy3");
     $("#blackKnighthp").appendTo("#enemy3hp");
+    $("#blackKnight").css("background-color", "red");
+    $("#blackKnighthp").css("background-color", "red");
+    $("#blackKnight").css("border-color", "black");
+    $("#blackKnighthp").css("border-color", "black");
     enemy3 = blackKnight;
     }
 });
@@ -175,14 +272,26 @@ $("#knightsOfNi").on("click", function() {
     //append the kingArthur divs to the enemy1 divs
     $("#kingArthur").appendTo("#enemy1");
     $("#kingArthurhp").appendTo("#enemy1hp");
+    $("#kingArthur").css("background-color", "red");
+    $("#kingArthurhp").css("background-color", "red");
+    $("#kingArthur").css("border-color", "black");
+    $("#kingArthurhp").css("border-color", "black");
     enemy1 = kingArthur;
     //append the killerRabbit divs to the enemy2 divs
     $("#killerRabbit").appendTo("#enemy2");
     $("#killerRabbit").appendTo("#enemy2hp");
+    $("#killerRabbit").css("background-color", "red");
+    $("#killerRabbithp").css("background-color", "red");
+    $("#killerRabbit").css("border-color", "black");
+    $("#killerRabbithp").css("border-color", "black");
     enemy2 = killerRabbit;
     //append the blackKnight divs to the enemy3 divs
     $("#blackKnight").appendTo("#enemy3");
     $("#blackKnighthp").appendTo("#enemy3hp");
+    $("#blackKnight").css("background-color", "red");
+    $("#blackKnighthp").css("background-color", "red");
+    $("#blackKnight").css("border-color", "black");
+    $("#blackKnighthp").css("border-color", "black");
     enemy3 = blackKnight;
     }
 });
@@ -201,14 +310,26 @@ $("#blackKnight").on("click", function() {
     //append the kingArthur divs to the enemy1 divs
     $("#kingArthur").appendTo("#enemy1");
     $("#kingArthurhp").appendTo("#enemy1hp");
+    $("#kingArthur").css("background-color", "red");
+    $("#kingArthurhp").css("background-color", "red");
+    $("#kingArthur").css("border-color", "black");
+    $("#kingArthurhp").css("border-color", "black");
     enemy1 = kingArthur;
     //append the killerRabbit divs to the enemy2 divs
     $("#killerRabbit").appendTo("#enemy2");
     $("#killerRabbithp").appendTo("#enemy2hp");
+    $("#killerRabbit").css("background-color", "red");
+    $("#killerRabbithp").css("background-color", "red");
+    $("#killerRabbit").css("border-color", "black");
+    $("#killerRabbithp").css("border-color", "black");
     enemy2 = killerRabbit;
     //append the knightsOfNi divs to the enemy3 divs
     $("#knightsOfNi").appendTo("#enemy3");
     $("#knightsOfNihp").appendTo("#enemy3hp");
+    $("#knightsOfNi").css("background-color", "red");
+    $("#knightsOfNihp").css("background-color", "red");
+    $("#knightsOfNi").css("border-color", "black");
+    $("#knightsOfNihp").css("border-color", "black");
     enemy3 = knightsOfNi;
     }
 });

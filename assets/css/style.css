@@ -1,14 +1,87 @@
 
+h1 {
+    text-align: center;
+    margin: 50px;
+    color: white;
+    font-size: 30px;
+}
+
 img {
     height: 200px;
     width: 200px;
-};
+}
 
-.container {
-    background-color: black;
-    font: white;
-};
+body {
+    background: url("../images/montypython.jpg");
+}
 
-#kingArthur {
+#kingArthur, #kingArthurhp, #killerRabbit, #killerRabbithp, #knightsOfNi, #knightsOfNihp, #blackKnight, #blackKnighthp {
     background-color: white;
-};
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#kingArthur, #killerRabbit, #knightsOfNi, #blackKnight {
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+    border-color: green;
+}
+
+#kingArthurhp, #killerRabbithp, #knightsOfNihp, #blackKnighthp {
+    border-style: solid;
+    border-width: 0px 5px 5px 5px;
+    border-color: green;
+}
+
+
+.yourCharacter {
+    padding: 0px 883px 0px 0px;
+    margin: 0px 0px 0px 15px;
+}
+
+
+.defender {
+    padding: 0px 883px 0px 0px;
+    margin: 0px 0px 0px 15px;
+    text-align: center;
+}
+
+#defender {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#defenderImage {
+    background-color: black;
+    text-align: center;
+}
+
+#defenderhp {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 883px 0px 0px;
+    margin: 0px 0px 0px 15px;
+    color: white;
+}
+
+button {
+    margin: 0px 0px 0px 15px;
+}
+
+
+
