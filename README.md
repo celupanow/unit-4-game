@@ -37,13 +37,14 @@ This application uses basic jQuery to create a game where the user chooses their
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-![RPG Game](./assets/images/unit-4-game.png "RPG Game")
+![RPG Game](./assets/images/unit4game.png "RPG Game")
 
 ### Built With
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Bootstrap](https://getbootstrap.com/)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [jQuery](https://jquery.com/)
 
 <!-- GETTING STARTED -->
 
@@ -116,5 +117,5 @@ Project Link: [https://github.com/celupanow/unit-4-game](https://github.com/celu
 
 [product-screenshot]: images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjY1MzQ2MV19
+eyJoaXN0b3J5IjpbLTk0ODQ3ODA5N119
 -->
