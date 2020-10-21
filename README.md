@@ -5,7 +5,7 @@
  
 <h3 align="center">RPG Game</h3>
 <p align="center">
-This application uses basic jQuery to create a game where the user chooses their character, then choos
+This application uses basic jQuery to create a game where the user chooses their character, then fights against the other characters.
 <br />
 <br />
 <a href="https://celupanow.github.io/unit-4-game">View Demo</a>
@@ -37,7 +37,7 @@ This application uses basic jQuery to create a game where the user chooses their
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-![Trivia Game](./assets/images/unit-4-game.png "Trivia Game")
+![RPG Game](./assets/images/unit-4-game.png "RPG Game")
 
 ### Built With
 * [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML)
@@ -116,5 +116,5 @@ Project Link: [https://github.com/celupanow/unit-4-game](https://github.com/celu
 
 [product-screenshot]: images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjA5MDIxMF19
+eyJoaXN0b3J5IjpbLTg0MjY1MzQ2MV19
 -->
