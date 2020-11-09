@@ -113,9 +113,9 @@ Project Link: [https://github.com/celupanow/unit-4-game](https://github.com/celu
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 
-[linkedin-url]: https://linkedin.com/in/celupanow
+[linkedin-url]: https://www.linkedin.com/in/christinalupanow
 
 [product-screenshot]: images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0ODQ3ODA5N119
+eyJoaXN0b3J5IjpbLTE0MjI1MDMyNzcsLTk0ODQ3ODA5N119
 -->
